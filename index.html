@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head >
+        <meta charset="utf-8">
+        <meta name="Calculator" content="simple calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eva Nummer">
+        <title>Calculator App</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Jersey+10+Charted&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>.....Calculator.....</h1>
+        <div id="wrapper">
+
+            <div  id="screen">
+
+                <div><br>.............. </div>
+                
+            </div>
+
+            <div class="inputs">
+              <label for="number1"> 1st Number</label>
+              <input type="text" id="number1" name="number_one">
+            </div>
+
+            <div class="inputs">
+                <label for="operator">
+                    <span>Operator</span>
+                </label>
+                <select name="operators" id="operator">
+                    <option value="addition">+</option>
+                    <option value="subtraction">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            
+            <div class="inputs">
+                <label for="number2"> 2nd Number</label>
+                <input type="text" id="number2" name="number_two">
+            </div>
+
+            <button id="submit" type="submit">Equals</button>
+            <button id="reset" type="reset">Reset</button>
+
+        </div>
+
+       
+
+
+        <script src="index.js">
+
+        </script>
+    </body>
+</html>

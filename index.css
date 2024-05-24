@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(36, 43, 30); 
+}
+h1 {
+    background-color: #cad4bf;
+    border-radius: 15rem;
+    width: 33%;
+    margin-left: 33vw;
+    text-align: center;
+    color: rgb(124, 121, 118);
+    font-family: "Jersey 10 Charted", monospace, 'Times New Roman', Times, serif;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    background-color:#cad4bf;
+    border-radius: 5px;
+    max-width: 80vw;
+    height: 50vw;
+    margin: 1vw 10vw;   
+}
+#screen {
+    grid-column: 2 / 6;
+    grid-row: 1;
+    background-color: grey;
+    border: 2px, solid black;
+}
+.inputs {
+    grid-row: 3;
+    background-color: #cad4bf;
+    margin: 2px;
+}
+#submit {
+    grid-row: 4 ;
+    grid-column: 4;
+    width: 8vw;
+    height: 4vw;
+    background-color: rgb(93, 199, 91);
+    border-radius: 5px;
+}
+#submit:hover {
+    background-color: rgb(194, 226, 159);
+}
+#reset {
+    grid-row: 4 ;
+    grid-column: 5;
+    width: 8vw;
+    height: 4vw;
+    background-color: rgb(93, 199, 91);
+    border-radius: 5px;
+}
+#reset:hover {
+    background-color: rgb(194, 226, 159);
+}
+input[type=text] {
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+}

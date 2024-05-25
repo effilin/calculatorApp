@@ -19,29 +19,29 @@
 
             <div  id="screen">
 
-                <div id="results"> </div>
+                <p id="results"> </p>
                 
             </div>
 
-            <button class="numBtn number" onclick="value(1)">1</button>
-            <button class="numBtn number" onclick="value(2)">2</button>
-            <button class="numBtn number" onclick="value(3)">3</button>
-            <button class="numBtn operator" onclick="value('+')">+</button>
-            <button class="numBtn number" onclick="value(4)">4</button>
-            <button class="numBtn number" onclick="value(5)">5</button>
-            <button class="numBtn number" onclick="value(6)">6</button>
-            <button class="numBtn operator" onclick="value('-')">-</button>
-            <button class="numBtn number" onclick="value(7)">7</button>
-            <button class="numBtn number" onclick="value(8)">8</button>
-            <button class="numBtn number" onclick="value(9)">9</button>
-            <button class="numBtn operator" onclick="value('*')">*</button>
-            <button class="numBtn number" onclick="value(0)">0</button>
-            <button class="numBtn operator" onclick="value('/')">/</button>
+            <button class="numBtn number" onclick="myValue('1')">1</button>
+            <button class="numBtn number" onclick="myValue('2')">2</button>
+            <button class="numBtn number" onclick="myValue('3')">3</button>
+            <button class="numBtn operator" onclick="myValue('+')">+</button>
+            <button class="numBtn number" onclick="myValue('4')">4</button>
+            <button class="numBtn number" onclick="myValue('5')">5</button>
+            <button class="numBtn number" onclick="myValue('6')">6</button>
+            <button class="numBtn operator" onclick="myValue('-')">-</button>
+            <button class="numBtn number" onclick="myValue('7')">7</button>
+            <button class="numBtn number" onclick="myValue('8')">8</button>
+            <button class="numBtn number" onclick="myValue('9')">9</button>
+            <button class="numBtn operator" onclick="myValue('*')">*</button>
+            <button class="numBtn number" onclick="myValue('0')">0</button>
+            <button class="numBtn operator" onclick="myValue('/')">/</button>
                  
             
 
-            <button id="submit" type="submit">Equals</button>
-            <button id="reset" type="reset">Reset</button>
+            <button id="submit" type="submit" onclick="equals()">Equals</button>
+            <button id="reset" type="reset" onclick="reset()">Reset</button>
 
         </div>
        

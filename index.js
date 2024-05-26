@@ -15,7 +15,7 @@ function myValue(a) {
 }
 
  
-function equals() {
+function equals(numbers1) {
 
     if( numbers1.includes("+")) {
         const additionIndex = numbers1.findIndex("+");

@@ -4,60 +4,77 @@ const subtract=(a, b) => a-b;
 const multiply=(a, b) => a*b;
 const divide=(a, b) => a/b
 
-
-const numbers1 = [];
+const inputData2 =[];
+const inputData =[];
 
 function myValue(a) {
-    numbers1.push(a);
-    const inputData = numbers1.join('');
+    inputData.push(a);
+    let displayData = inputData.join('');
     console.log(inputData);
-    document.getElementById('results').innerHTML=inputData;
+    document.getElementById('results2').innerHTML= displayData;
 }
 
- 
-function equals(numbers1) {
-
-    if( numbers1.includes("+")) {
-        const additionIndex = numbers1.findIndex("+");
-        let a = numbers1.slice(0, additionIndex).join('');
-        let b = numbers1.slice(additionIndex + 1).join('');
-        const addResult= addition(a, b);
-         return document.getElementById('results').innerHTML=addResult; 
-        
-    }
-    else if (numbers1.includes("-")) {
-        const subIndex = numbers1.findIndex("-");
-        let a = numbers1.slice(0, subIndex).join('');
-        let b = numbers1.slice(subIndexIndex + 1).join('');
-        const subResult = subtract(a, b);
-        return document.getElementById('results').innerHTML=subResult; 
-    }
-    else if (numbers1.includes("*")) {
-        const mulIndex = numbers1.findIndex("*");
-        let a = numbers1.slice(0, mulIndex).join('');
-        let b = numbers1.slice(mulIndex + 1).join('');
-        const mulResult = multiply(a, b);
-        return document.getElementById('results').innerHTML=mulResult; 
-    }
-    else if (numbers1.includes("/")) {
-        const divIndex = numbers1.findIndex("/");
-        let a = numbers1.slice(0, divIndex).join('');
-        let b = numbers1.slice(divIndex + 1).join('');
-        const divResult = divide(a, b);
-        return document.getElementById('results').innerHTML=divResult; 
-    }
-    else {
-        console.log( n/a);
-    }
+function addSign(inputData) {
+  let inputNew = inputData.join('');
+  inputData2.push(inputNew);
+  document.getElementById("results1").innerHTML = inputNew;
+  document.getElementById("operator").innerHTML = "+";
+  document.getElementById('results2').innerHTML = "";
+  inputData.splice(0, inputData.length);
+  console.log(inputData2);
 }
+
+
+function subSign(inputData) {
+    let inputNew = inputData.join('');
+    inputData2.push(inputNew);
+    document.getElementById("results1").innerHTML = inputNew;
+    document.getElementById("operator").innerHTML = "-";
+    document.getElementById('results2').innerHTML = "";
+    inputData.splice(0, inputData.length);
+  }
+  function multSign(inputData) {
+    let inputNew = inputData.join('');
+    inputData2.push(inputNew);
+    document.getElementById("results1").innerHTML = inputNew;
+    document.getElementById("operator").innerHTML = "*";
+    document.getElementById('results2').innerHTML = "";
+    inputData.splice(0, inputData.length);
+  }
+
+  function divSign(inputData) {
+    let inputNew = inputData.join('');
+    inputData2.push(inputNew);
+    document.getElementById("results1").innerHTML = inputNew;
+    document.getElementById("operator").innerHTML = "/";
+    document.getElementById('results2').innerHTML = "";
+    inputData.splice(0, inputData.length);
+  }
+
 function reset() {
-    document.getElementById('results').innerHTML = " ";
-    const arrayElements = numbers1.length;
-    numbers1.splice(0, arrayElements);
+    document.getElementById('results2').innerHTML = " ";
+    document.getElementById('results1').innerHTML = " ";
+    document.getElementById('operator').innerHTML = " ";
+    inputData.splice(0, inputData.length);
+    inputData2.splice(0, inputData2.length);
 }
 
-console.log(numbers1);
-myValue(21);
-myValue('+');
-myValue(2);
+function equals() {
+    let x = document.getElementById('operator').innerHTML;
+    console.log(x);
+    if(x === "+") {
+        console.log("add")
+    }else if (x === "-") {
+        console.log("minus");
+    }else if ( x === "*") {
+        console.log('multiply');
+    } else if (x === "/") {
+        console.log('divide');
+    } else{
+        console.log('error');
+    }
+}
+
+
+
 

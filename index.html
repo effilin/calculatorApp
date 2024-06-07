@@ -17,26 +17,28 @@
 
         <div id="wrapper">
 
-            <div  id="screen">
+            <div id="screen">
 
-                <p id="results"> </p>
+                <p id="results1"></p>
+                <p id="operator"></p>
+                <p id="results2"></p>
                 
             </div>
 
             <button class="numBtn number" onclick="myValue('1')">1</button>
             <button class="numBtn number" onclick="myValue('2')">2</button>
             <button class="numBtn number" onclick="myValue('3')">3</button>
-            <button class="numBtn operator" onclick="myValue('+')">+</button>
+            <button class="numBtn operator" onclick="addSign(inputData)">+</button>
             <button class="numBtn number" onclick="myValue('4')">4</button>
             <button class="numBtn number" onclick="myValue('5')">5</button>
             <button class="numBtn number" onclick="myValue('6')">6</button>
-            <button class="numBtn operator" onclick="myValue('-')">-</button>
+            <button class="numBtn operator" onclick="subSign(inputData)">-</button>
             <button class="numBtn number" onclick="myValue('7')">7</button>
             <button class="numBtn number" onclick="myValue('8')">8</button>
             <button class="numBtn number" onclick="myValue('9')">9</button>
-            <button class="numBtn operator" onclick="myValue('*')">*</button>
+            <button class="numBtn operator" onclick="multSign(inputData)">*</button>
             <button class="numBtn number" onclick="myValue('0')">0</button>
-            <button class="numBtn operator" onclick="myValue('/')">/</button>
+            <button class="numBtn operator" onclick="divSign(inputData)">/</button>
                  
             
 
